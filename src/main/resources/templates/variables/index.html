@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title>
+</head>
+<body>
+	<h1 th:text="${titulo}">Enviar variables por parámetros</h1>
+	<ul>
+		<li><a th:href="@{/variables/string/}+'Hola Daniel'"
+			th:text='enlace'></a></li>
+		<li><a th:href="@{/variables/string/}+'Hola Silvia'"
+			th:text='enlace'></a></li>
+		<li><a th:href="@{/variables/string/}+${titulo}+'/'+7"
+			th:text='enlace'></a></li>
+	</ul>
+</body>
+</html>

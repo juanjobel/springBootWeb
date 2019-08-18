@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}"></title>
+</head>
+<body>
+	<h1>Enviar variables por parámetros</h1>
+	<ul>
+		<li><a th:href="@{/params/string(texto='prueba')}"
+			th:text='enlace'></a></li>
+		<li><a th:href="@{/params/string(texto='prueba2')}"
+			th:text='enlace2'></a>
+		<li>
+		<li><a th:href="@{/params/mix-params(saludo='prueba',numero=3)}"
+			th:text='enlace3'></a>
+		<li>
+	</ul>
+</body>
+</html>
